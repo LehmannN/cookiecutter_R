@@ -1,0 +1,11 @@
+{
+    "full_name": "Your name",
+    "email": "Your address email (eg. you@example.com)",
+    "project_name": "Project name",
+    "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '-')}}",
+    "project_desc": "Project description",
+    "report_title": "Report Title",
+    "git_remote": "Git repository (if known)",
+    "start_date": "{% now 'local' %}",
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
