@@ -14,17 +14,13 @@ Install `cookiecutter` using `pip`:
 pip install cookiecutter
 ```
 
-OR
-
-`homebrew`:
+OR `brew` :
 
 ```
 brew install cookiecutter
 ```
 
-OR
-
-`conda`:
+OR `conda` :
 
 ```
 conda install -c conda-forge cookiecutter
@@ -36,13 +32,13 @@ Usage
 Generate a new analysis directory using:
 
 ```
-cookiecutter gh:lazappi/cookiecutter-r-analysis
+cookiecutter gh:lehmannn/cookiecutter_R
 ```
 
 If this doesn't work try using SSH with the full path:
 
 ```
-cookiecutter git+ssh://git@github.com/lazappi/cookiecutter-r-analysis.git
+cookiecutter git+ssh://git@github.com/lehmannn/cookiecutter_R.git
 ```
 
 You will then be asked some questions to set up your project. Leaving answers
