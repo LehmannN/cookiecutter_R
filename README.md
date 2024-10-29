@@ -1,7 +1,7 @@
 R data analysis template
 ========================
 
-My template for setting up an R analysis project. This template uses
+This is a template for setting up an R analysis project. This template uses
 [cookiecutter](https://github.com/audreyr/cookiecutter), a Python templating
 tool, to setup a directory structure.
 
@@ -53,11 +53,12 @@ Structure
 
 The resulting analysis project will have the following structure.
 
-* **R** - Resuable R code (functions etc.)
-* **analysis** - R Markdown analysis files
-* **docs** - Rendered analysis reports
-* **data** - Raw data used for analysis
-* **output** - Output files
+* **scripts** - Reusable code (functions etc.)
+* **notebooks** - R Markdown analysis files
+* **reports** - Rendered analysis reports
+* **data** - Data used for analysis (raw, intermediate and final)
+* **outputs** - Output files (images, plots, tables)
+* **reports** - Reports of the analyses
 
 License
 -------
@@ -69,5 +70,5 @@ Acknowledgements
 
 Much of this template is based on bdcaf's
 [cookiecutter-r-data-analysis](https://github.com/bdcaf/cookiecutter-r-data-analysis)
-template.
+template and on lazappi's template [cookiecutter-r-analysis](https://github.com/lazappi/cookiecutter-r-analysis).
 
