@@ -1,0 +1,9 @@
+image: rocker/verse:latest  # Utilisez une image Docker R pour CI
+
+before_script:
+  - R -e "install.packages('renv')"
+  - R -e "renv::restore()"
+
+test:
+  script:
+    - Rscript -e "testthat::test_dir('tests')" 

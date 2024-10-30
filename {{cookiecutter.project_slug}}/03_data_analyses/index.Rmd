@@ -1,5 +1,5 @@
 ---
-title: "Report title"
+title: "{{cookiecutter.project_name}}"
 author: "{{cookiecutter.full_name}}"
 date: "`r Sys.Date()`"
 output: bookdown::gitbook

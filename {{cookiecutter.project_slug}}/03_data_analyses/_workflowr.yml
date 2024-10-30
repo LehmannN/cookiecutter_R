@@ -2,14 +2,14 @@
 # Version 1.1.1
 
 # The seed to use for random number generation. See ?set.seed for details.
-seed: 12345678
+#seed: 12345678
 
 # The working directory to build the R Markdown files. The path is relative to
 # _workflowr.yml. See ?rmarkdown::render for details.
-knit_root_dir: "."
+knit_root_dir: "notebook/"
 
 # Manually insert session info
 sessioninfo: ""
 
 # Set link URL
-github: "http://github.com/yourRepoName"
+github: "{{cookiecutter.git_remote}}"
