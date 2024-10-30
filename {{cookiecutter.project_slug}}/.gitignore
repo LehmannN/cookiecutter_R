@@ -14,3 +14,6 @@
 .Ruserdata
 renv/library/
 renv/staging/
+
+# Ignore .DS_Store files
+.DS_Store
