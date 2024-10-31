@@ -6,7 +6,7 @@
     "email": "john.doe@gmail.com",
     "existing_git_repo": "no",
     "git_username": "{{ cookiecutter.full_name.lower().replace(' ', '') }}",
-    "git_repo_url": "https://github.com/{{ cookiecutter.full_name }}/{{ cookiecutter.project_slug }}.git",
+    "git_repo_url": "https://github.com/{{ cookiecutter.git_username }}/{{ cookiecutter.project_slug }}.git",
     "include_nextflow_pipeline": "no",
     "start_date": "{% now 'local' %}",
     "_extensions": ["jinja2_time.TimeExtension"]

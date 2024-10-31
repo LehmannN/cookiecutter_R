@@ -12,4 +12,4 @@ knit_root_dir: "notebook/"
 sessioninfo: ""
 
 # Set link URL
-github: "{{cookiecutter.git_remote}}"
+github: "{{ cookiecutter.git_repo_url }}"
