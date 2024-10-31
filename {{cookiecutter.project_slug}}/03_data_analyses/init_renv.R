@@ -8,8 +8,7 @@ options(repos = c(CRAN = "https://cloud.r-project.org"))
 # ---------------------------------------------------
 # 0. Set custom renv cache location within the project folder
 # ---------------------------------------------------
-Sys.setenv(RENV_PATHS_CACHE = "renv/cache")
-Sys.setenv(RENV_PATHS_LIBRARY = "renv/library")
+Sys.setenv(RENV_PATHS_ROOT = "03_data_analyses/renv")
 
 # ---------------------------------------------------
 # 1. Ensure renv is installed
@@ -21,7 +20,7 @@ if (!requireNamespace("renv", quietly = TRUE)) {
 # ---------------------------------------------------
 # 2. Initialize or restore renv environment
 # ---------------------------------------------------
-if (file.exists("renv.lock")) {
+if (file.exists("03_data_analyses/renv.lock")) {
   message("Restoring packages from renv.lock...")
   renv::restore()
 } else {
