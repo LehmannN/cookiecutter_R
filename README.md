@@ -48,7 +48,7 @@ Steps
 ------
 
 1. `cookiecutter gh:lehmannn/cookiecutter_R`
-2. `module load R`
+2. `module load R pandoc`
 3. `cd <project_name>`
 4. `bash initialize_project.sh`
 
