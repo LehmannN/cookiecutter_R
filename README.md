@@ -44,6 +44,14 @@ cookiecutter git+ssh://git@github.com/lehmannn/cookiecutter_R.git
 You will then be asked some questions to set up your project. Leaving answers
 blank will select the default (shown in [brackets]).
 
+Steps
+------
+
+1. `cookiecutter gh:lehmannn/cookiecutter_R`
+2. `module load R`
+3. `cd <project_name>`
+4. `bash initialize_project.sh`
+
 Structure
 ----------
 
