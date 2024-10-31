@@ -40,6 +40,7 @@ git push -u origin master
 # ---------------------------------------------------
 # 5. Setup R environment
 # ---------------------------------------------------
-Rscript 03_data_analyses/init_renv.R
+cd 03_data_analyses
+Rscript init_renv.R
 
 echo "Project setup complete!"

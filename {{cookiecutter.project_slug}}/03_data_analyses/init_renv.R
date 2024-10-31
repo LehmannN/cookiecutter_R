@@ -8,7 +8,7 @@ options(repos = c(CRAN = "https://cloud.r-project.org"))
 # ---------------------------------------------------
 # 0. Set custom renv cache location within the project folder
 # ---------------------------------------------------
-Sys.setenv(RENV_PATHS_ROOT = "03_data_analyses/renv")
+Sys.setenv(RENV_PATHS_ROOT = "renv")
 
 # ---------------------------------------------------
 # 1. Ensure renv is installed
@@ -20,7 +20,7 @@ if (!requireNamespace("renv", quietly = TRUE)) {
 # ---------------------------------------------------
 # 2. Initialize or restore renv environment
 # ---------------------------------------------------
-if (file.exists("03_data_analyses/renv.lock")) {
+if (file.exists("renv.lock")) {
   message("Restoring packages from renv.lock...")
   renv::restore()
 } else {
@@ -35,7 +35,7 @@ if (!requireNamespace("yaml", quietly = TRUE)) {
   install.packages("yaml")
 }
 
-config_file <- "03_data_analyses/_R_packages.yml"
+config_file <- "_R_packages.yml"
 
 install_missing <- function(pkg_name, version = NULL) {
   if (is.null(version)) {
