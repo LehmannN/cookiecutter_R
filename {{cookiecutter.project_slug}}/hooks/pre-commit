@@ -1,0 +1,8 @@
+#!/bin/sh
+
+maxsize=100000000  # 100MB Git limit
+
+find . -type f -size +${maxsize}c | while read file; do
+  echo "Error: $file exceeds ${maxsize} bytes, not committing."
+  exit 1
+done

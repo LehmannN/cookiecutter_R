@@ -5,7 +5,7 @@
 *.[Rr][Dd][Aa][Tt][Aa]
 
 # Ignore all the data folders that you may have (eg. data/ DATA/ Data/)
-[Dd][Aa][Tt][Aa]/
+#[Dd][Aa][Tt][Aa]/
 
 # Ignore R config files
 .Rproj.user

@@ -1,10 +1,14 @@
 {
-    "full_name": "Your name",
-    "email": "Your address email (eg. you@example.com)",
     "project_name": "Project name",
-    "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '-')}}",
-    "project_desc": "Project description",
-    "git_remote": "Git repository (if known)",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "project_desc": "Project short description",
+    "full_name": "John DOE",
+    "email": "john.doe@gmail.com",
+    "existing_git_repository": "no",
+    "git_username": "{{ cookiecutter.full_name.lower().replace(' ', '') }}",
+    "git_repo_url": "{% if cookiecutter.existing_git_repo == 'no' %}https://github.com/{{ cookiecutter.full_name }}/{{ cookiecutter.project_slug }}.git{% else %}None{% endif %}",
+    "include_nextflow_pipeline": "no",
     "start_date": "{% now 'local' %}",
     "_extensions": ["jinja2_time.TimeExtension"]
 }
+
