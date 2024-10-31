@@ -20,6 +20,7 @@ output:
       toc: true  # Enable table of contents
       toc_depth: 2
       edit: false  # Optionally add an 'Edit' button linking to the GitHub repo
+      search: true  # Enables the search bar
       download: ["pdf", "bookdown::gitbook"]
       github-repo: "{{cookiecutter.git_repo_url}}"
 

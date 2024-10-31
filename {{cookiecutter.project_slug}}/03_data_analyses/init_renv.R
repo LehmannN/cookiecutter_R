@@ -6,6 +6,12 @@
 options(repos = c(CRAN = "https://cloud.r-project.org"))
 
 # ---------------------------------------------------
+# 0. Set custom renv cache location within the project folder
+# ---------------------------------------------------
+Sys.setenv(RENV_PATHS_CACHE = "renv/cache")
+Sys.setenv(RENV_PATHS_LIBRARY = "renv/library")
+
+# ---------------------------------------------------
 # 1. Ensure renv is installed
 # ---------------------------------------------------
 if (!requireNamespace("renv", quietly = TRUE)) {
@@ -30,7 +36,7 @@ if (!requireNamespace("yaml", quietly = TRUE)) {
   install.packages("yaml")
 }
 
-config_file <- "_R_packages.yml"
+config_file <- "03_data_analyses/_R_packages.yml"
 
 install_missing <- function(pkg_name, version = NULL) {
   if (is.null(version)) {
@@ -55,7 +61,7 @@ if (file.exists(config_file)) {
 }
 
 # Generate the bibliography for the listed packages
-knitr::write_bib(package_names, 'renv/packages.bib')
+#knitr::write_bib(package_names, 'renv/packages.bib') ###
 
 # ---------------------------------------------------
 # 4. Take a snapshot of the environment
