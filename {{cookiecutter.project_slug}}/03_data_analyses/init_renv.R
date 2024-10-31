@@ -1,3 +1,5 @@
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+
 # Check if renv is installed, install if necessary
 if (!requireNamespace("renv", quietly = TRUE)) {
   install.packages("renv")
