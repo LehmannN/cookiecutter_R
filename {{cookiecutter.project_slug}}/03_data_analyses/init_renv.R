@@ -66,4 +66,5 @@ if (file.exists(config_file)) {
 # 4. Take a snapshot of the environment
 # ---------------------------------------------------
 message("Snapshotting environment...")
-renv::snapshot(library = Sys.getenv("RENV_PATHS_LIBRARY"))
+#renv::snapshot(library = Sys.getenv("RENV_PATHS_LIBRARY"))
+renv::snapshot()

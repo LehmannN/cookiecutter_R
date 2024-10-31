@@ -51,6 +51,7 @@ Steps
 2. `module load R pandoc`
 3. `cd <project_name>`
 4. `bash initialize_project.sh`
+5. Open RStudio, run `renv::init()`
 
 Structure
 ----------

@@ -8,7 +8,6 @@ date: "`r Sys.Date()`"
 # ---------------------------------------------------
 # Specify output format and options
 # ---------------------------------------------------
-output_dir: "report"
 rmd_subdir: ["notebook"]
 delete_merged_file: true
 new_session: no    # set to yes if you want each chapter to run in a different R session
