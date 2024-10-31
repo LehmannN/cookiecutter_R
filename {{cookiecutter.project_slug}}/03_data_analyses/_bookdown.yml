@@ -1,7 +1,44 @@
-book_filename: "{{cookiecutter.project_slug}}"
+# ---------------------------------------------------
+# Metadata for the book
+# ---------------------------------------------------
+book_filename: "{{cookiecutter.project_name}}"
+author: "{{cookiecutter.full_name}}"
+date: "`r Sys.Date()`" 
+
+# ---------------------------------------------------
+# Specify output format and options
+# ---------------------------------------------------
+output_dir: "report"
+rmd_subdir: ["notebook"]
+delete_merged_file: true
+new_session: no    # set to yes if you want each chapter to run in a different R session
+code_folding: "show"  # set to "hide" if you want the code to be hidden
+
+output:
+  bookdown::gitbook:
+    config:
+      toc: true  # Enable table of contents
+      toc_depth: 2
+      edit: false  # Optionally add an 'Edit' button linking to the GitHub repo
+      download: ["pdf", "bookdown::gitbook"]
+      github-repo: "{{cookiecutter.git_repo_url}}"
+
 language:
   ui:
     chapter_name: ""
-delete_merged_file: true
-output_dir: "report"
-rmd_subdir: ["notebook"]
+
+# ---------------------------------------------------
+# Citation and bibliography settings
+# ---------------------------------------------------
+bibliography: ["references.bib"]  # Replace with the actual path to your .bib file if needed
+biblio-style: apalike
+link-citations: true
+
+
+
+
+
+
+
+
+

@@ -47,6 +47,10 @@ You have two options to handle large files (> 100 Mo) :
 * Just ignore them : add them in the `.gitignore` file.
 * Add them with Git LFS : add them in the `.gitattributes` file.
 
+By default, only CSV and TSV files are handled by Git (no RDS, RData or h5 files). 
+
+If Git LFS is not installed, you can run the command `git lfs install` in your terminal.
+
 ## Perform the analyses
 
 ### First time 

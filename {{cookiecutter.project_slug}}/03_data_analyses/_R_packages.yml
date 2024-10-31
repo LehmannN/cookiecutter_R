@@ -1,0 +1,7 @@
+packages:
+    - name: dplyr
+    - name: ggplot2
+    - name: bookdown
+    - name: rmarkdown
+    - name: knitr
+    - name: readr
